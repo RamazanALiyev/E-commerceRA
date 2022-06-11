@@ -1,0 +1,59 @@
+$breakpoint-phone: 576px;
+.Newaccessuar {
+  margin: 4rem 0 6rem;
+  @media (max-width: $breakpoint-phone) {
+    position: relative;
+    margin-top: 88px;
+  }
+  .center {
+    width: 90%;
+    margin: 0 auto;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      .some {
+        font-weight: 500;
+        color: #333333;
+      }
+      p.left {
+        font-size: 20px;
+        @extend .some;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 16px;
+        }
+      }
+      p.right {
+        font-size: 14px;
+        @extend .some;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @media (max-width: $breakpoint-phone) {
+            position: absolute;
+            top: 460px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        .right-icon {
+          margin-left: 17.5px;
+          color: #333333;
+        }
+      }
+    }
+    .cards {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $breakpoint-phone) {
+        overflow-y: scroll;
+        padding-left: 5px;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}

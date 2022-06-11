@@ -1,0 +1,206 @@
+$breakpoint-phone: 576px;
+.Comments-all {
+  .user-profile {
+    display: flex;
+    padding: 48px 0 32px 0;
+    @media (max-width: $breakpoint-phone) {
+      flex-direction: column;
+      padding: 41px 0 24px 0;
+    }
+    .user-star {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid #bdbdbd;
+      padding-right: 45px;
+      @media (max-width: $breakpoint-phone) {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+      }
+      span {
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 91px;
+        color: #000000;
+        margin-bottom: 40px;
+      }
+      .stars {
+        @media (max-width: $breakpoint-phone) {
+          border-bottom: 2px solid #bdbdbd;
+          padding: 0 0 26px 0;
+        }
+      }
+    }
+    .user-comments {
+      padding: 0 11.25rem 38px 31px;
+      @media (max-width: $breakpoint-phone) {
+        padding: 0;
+      }
+      .name {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $breakpoint-phone) {
+          display: block;
+          text-align: center;
+          margin-top: 24px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #4f4f4f;
+          margin-bottom: 8px;
+        }
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #4f4f4f;
+          @media (max-width: $breakpoint-phone) {
+            display: none;
+          }
+        }
+      }
+      .device-information {
+        margin-bottom: 1rem;
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #4f4f4f;
+          @media (max-width: $breakpoint-phone) {
+            text-align: center;
+          }
+        }
+      }
+      .user-comment {
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #4f4f4f;
+        }
+      }
+    }
+  }
+  .divider {
+    height: 1px;
+    background-color: #bdbdbd;
+  }
+  .form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0 140px 0;
+    @media (max-width: $breakpoint-phone) {
+      width: 100%;
+      padding: 24px 0 60px 0;
+    }
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 3rem;
+      @media (max-width: $breakpoint-phone) {
+        margin-bottom: 2rem;
+      }
+    }
+    label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4f4f4f;
+      margin-bottom: 8px;
+    }
+    input {
+      background: #f2f2f2;
+      border-radius: 8px;
+      border: 1px solid #f2f2f2;
+      outline: none;
+    }
+    .form-name-surname {
+      display: flex;
+      @media (max-width: $breakpoint-phone) {
+        flex-direction: column;
+      }
+      .form-name {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        @media (max-width: $breakpoint-phone) {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+        input {
+          width: 462px;
+          padding: 14px 0 14px 16px;
+          @media (max-width: $breakpoint-phone) {
+            width: 100%;
+          }
+        }
+      }
+      .form-surname {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 462px;
+          padding: 14px 0 14px 16px;
+          @media (max-width: $breakpoint-phone) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .selecet-product {
+      width: 111%;
+      display: flex;
+      flex-direction: column;
+      margin: 32px 0;
+      @media (max-width: $breakpoint-phone) {
+        margin: 24px 0;
+        width: 100%;
+      }
+
+      select {
+        padding: 14px 0 14px 16px;
+        background: #f2f2f2;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        outline: none;
+      }
+    }
+    .write-comment {
+      @media (max-width: $breakpoint-phone) {
+        width: 100%;
+      }
+        width: 111%;
+      display: flex;
+      flex-direction: column;
+      input {
+        padding: 14px 0 110px 16px;
+      }
+    }
+    .form-btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 32px;
+      .btn {
+        text-align: center;
+        background: #2dd06e;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 8px;
+        padding: 14px 48px;
+      }
+    }
+  }
+}

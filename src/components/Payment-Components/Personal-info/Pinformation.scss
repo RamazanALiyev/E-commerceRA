@@ -1,0 +1,68 @@
+$breakpoint-phone: 576px;
+form{
+  .fullname{
+    @media (max-width: $breakpoint-phone) {
+      flex-direction: column;
+    }
+    .name{
+      @media (max-width: $breakpoint-phone) {
+        margin-right: 0 !important;
+
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        padding: 12px;
+        margin-top: 8px;
+        outline: none;
+      }
+    }
+    .surname{
+      @media (max-width: $breakpoint-phone) {
+        margin:24px 0;
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        padding: 12px;
+        margin-top: 8px;
+        outline: none;
+      }
+    }
+  }
+  .phone-email{
+    @media (max-width: $breakpoint-phone) {
+      flex-direction: column;
+    }
+    margin-bottom: 2rem;
+    .number{
+      @media (max-width: $breakpoint-phone) {
+        margin-right: 0 !important;
+
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        padding: 12px;
+        margin-top: 8px;
+        outline: none;
+      }
+    }
+    .email{
+      @media (max-width: $breakpoint-phone) {
+        margin-top: 24px;
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        padding: 12px;
+        margin-top: 8px;
+        outline: none;
+      }
+    }
+  }
+}

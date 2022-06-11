@@ -1,0 +1,329 @@
+$breakpoint-phone: 576px;
+
+.Basket {
+  background-color: #efefef;
+  height: 90vh;
+  padding-top: 40px;
+  @media (max-width: $breakpoint-phone) {
+    height: 80vh;
+  }
+
+  .center {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-phone) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .empty-basket-p {
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 20px;
+      color: #4f4f4f;
+    }
+
+    .empty-basket {
+      height: 500px;
+      width: 100%;
+      // border: 1px solid red;
+      border-radius: 8px;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .basket-icon {
+        font-size: 100px;
+        color: #2dd06e;
+        font-weight: 200;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 60px;
+        }
+      }
+
+      p {
+        color: #bdbdbd;
+        margin: 3rem 0 2rem 0;
+        font-size: 2rem;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 1rem;
+        }
+      }
+
+      .basket-link {
+        background: #2dd06e;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        padding: 1rem 4.5rem;
+        text-decoration: none;
+      }
+    }
+
+    .scrollBasket {
+      height: 35rem;
+      overflow: scroll;
+      width: 70%;
+      @media (max-width: $breakpoint-phone) {
+       width: 100%;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .full-basket {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        @media (max-width: $breakpoint-phone) {
+          width: 100%;
+          height: 330px;
+          display: flex;
+          align-items: flex-start;
+          padding: 24px;
+        }
+
+        .input {
+          width: 10%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: $breakpoint-phone) {
+            display: inline-block;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: max-content;
+            width: max-content;
+          }
+
+          input {
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #aeaeae;
+            border-radius: 4px;
+            position: relative;
+
+            &:checked {
+              background-color: #2dd06e;
+
+              &::before {
+                content: "✔";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+              }
+            }
+          }
+        }
+
+        label {
+          @media (max-width: $breakpoint-phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+          }
+          width: 80%;
+          display: flex;
+          height: 100px;
+
+          .basketProductImg {
+            display: flex;
+            align-items: center;
+            @media (max-width: $breakpoint-phone) {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 60%;
+            }
+
+            img {
+              width: 80%;
+              height: 80%;
+              @media (max-width: $breakpoint-phone) {
+                width: 100%;
+                height: 100%
+
+              }
+            }
+          }
+
+          .basketProductDetail {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            @media (max-width: $breakpoint-phone) {
+              padding: 0;
+              width: 100%;
+            }
+
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              color: #333333;
+              margin-bottom: 12px;
+              @media (max-width: $breakpoint-phone) {
+                text-align: center;
+                margin: 16px 0 0 0;
+              }
+            }
+
+            .colorPrice {
+              display: flex;
+              @media (max-width: $breakpoint-phone) {
+                display: flex;
+                flex-wrap: wrap;
+              }
+
+              p {
+                &:nth-child(1) {
+                  @media (max-width: $breakpoint-phone) {
+                    width: 100%;
+                    text-align: left;
+                  }
+
+                  span {
+                    margin-right: 5px;
+
+                    &:nth-child(2) {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+
+                &:nth-child(2) {
+                  @media (max-width: $breakpoint-phone) {
+                    width: 50%;
+                    text-align: left;
+                  }
+
+                  span {
+                    margin-right: 5px;
+
+                    &:nth-child(2) {
+                      color: #db2c66;
+                    }
+                  }
+                }
+
+                span {
+                  &:nth-child(1) {
+                    font-size: 12px;
+                    color: #828282;
+                  }
+
+                  &:nth-child(2) {
+                    font-size: 12px;
+                    color: #333333;
+                  }
+                }
+              }
+
+              .basketProtuctcopy {
+                display: none;
+                margin-top: 10px;
+
+                button {
+                  margin: 0 15px;
+                  border: none;
+                  outline: none;
+                  font-size: 18px;
+                  width: 30px;
+                  height: 30px;
+                  background-color: #fff;
+                }
+
+                span {
+                  font-size: 18px;
+                }
+
+                @media (max-width: $breakpoint-phone) {
+                  width: 50%;
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: center;
+                }
+              }
+            }
+          }
+
+          .basketProtuct {
+            @media (max-width: $breakpoint-phone) {
+              display: none;
+            }
+            width: 25%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+
+            button {
+              border: none;
+              outline: none;
+              font-size: 18px;
+              width: 30px;
+              height: 30px;
+              background-color: #fff;
+            }
+
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .delete {
+          @media (max-width: $breakpoint-phone) {
+            @media (max-width: $breakpoint-phone) {
+              display: inline-block;
+              align-items: flex-start;
+              justify-content: flex-start;
+              height: max-content;
+              width: max-content;
+            }
+          }
+          width: 10%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .deleteIcon {
+            font-size: 24px;
+            cursor: pointer;
+            color: #828282;
+          }
+        }
+      }
+
+      .product-count {
+        margin-bottom: 2rem;
+        font-weight: 500;
+        font-size: 20px;
+        color: #4F4F4F;
+      }
+    }
+  }
+}

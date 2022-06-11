@@ -1,0 +1,29 @@
+.register-status{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75vh;
+  .register-status-icon{
+    font-size: 10rem;
+    color: #2dd06e;
+  }
+  .register-status-text{
+    font-size: 3rem;
+    color: black;
+    margin: 3rem 0;
+  }
+  .register-status-btn{
+    background: #2dd06e;
+    border: 1px solid #2dd06e;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    width: 312px;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+.small-rew {
+  $breakpoint-phone: 576px;
+  @media (max-width: $breakpoint-phone) {
+     height: 260px !important;
+     width: 328px !important;
+     margin: 1rem 0;
+     background-image: url('../../../../assets/images/image7mob.png') !important;
+}
+  .spans {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+    span {
+      &:nth-child(1) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #303030;
+      }
+      &:nth-child(2) {
+        margin: 16px 0 24px 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #303030;
+      }
+      &:nth-child(3) {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3366ff;
+        cursor: pointer;
+      }
+    }
+  }
+}

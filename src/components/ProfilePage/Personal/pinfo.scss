@@ -1,0 +1,103 @@
+.cont{
+  margin-left: 32px;
+  h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: #4F4F4F;
+  }
+  .p-infos{
+    padding: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    .names{
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      label{
+        font-size: 14px;
+        line-height: 20px;
+        color: #4F4F4F;
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #F2F2F2;
+        outline: none;
+      }
+      .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 32px;
+      }
+      .surname{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .contact{
+      display: flex;
+      align-items: center;
+      label{
+        font-size: 14px;
+        line-height: 20px;
+        color: #4F4F4F;
+      }
+      input{
+        background: #F2F2F2;
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #F2F2F2;
+        outline: none;
+      }
+
+      .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 32px;
+      }
+      .phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .btns{
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .edit{
+        background: #2DD06E;
+        border-radius: 8px;
+        border: 1px solid #2DD06E;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 16px 0;
+        width: 312px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .submit{
+        background: #2DD06E;
+        border-radius: 8px;
+        border: 1px solid #2DD06E;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 16px 0;
+        width: 312px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

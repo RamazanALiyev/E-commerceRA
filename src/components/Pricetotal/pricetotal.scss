@@ -1,0 +1,139 @@
+$breakpoint-phone: 576px;
+.rightSide {
+  .reducerSide {
+    width: 300px;
+    height: 260px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    @media (max-width: $breakpoint-phone) {
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      height: 10vh;
+      padding: 35px;
+    }
+
+    .total {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      font-weight: 500;
+      font-size: 20px;
+      color: #1d2123;
+    }
+
+    .price {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0;
+
+      .op-name {
+        color: #333333;
+      }
+
+      .op-count {
+        color: #1d2123;
+      }
+    }
+
+    .delivery {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .op-name {
+        color: #333333;
+      }
+
+      .op-count {
+        color: #1d2123;
+      }
+    }
+
+    .gift-packet {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 1rem 0;
+
+      .op-name {
+        color: #333333;
+      }
+
+      .op-count {
+        color: #1d2123;
+      }
+    }
+
+    .promo {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .op-name {
+        color: #333333;
+      }
+
+      .op-count {
+        color: #1d2123;
+      }
+    }
+
+    .divider {
+      @media (max-width: $breakpoint-phone) {
+        display: none;
+      }
+      background: #828282;
+      height: 1px;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .total-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .op-name {
+        font-weight: 500;
+        color: #1d2123;
+      }
+
+      .op-count {
+        font-weight: 500;
+        color: #db2c66;
+      }
+    }
+  }
+  a{
+    @media (max-width: $breakpoint-phone) {
+      position: absolute;
+    }
+  }
+}
+
+.confirm-order {
+  width: 300px;
+  border-radius: 16px;
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711);
+  border: 1px solid #f5af19;
+  height: 48px;
+  cursor: pointer;
+  margin-top: 1rem;
+}

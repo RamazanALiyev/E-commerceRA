@@ -1,0 +1,13 @@
+$breakpoint-phone: 576px;
+.Anniversary{
+    margin-top: 64px;
+    .center{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $breakpoint-phone) {
+            flex-direction: column;
+          }
+    }
+}

@@ -1,0 +1,257 @@
+$breakpoint-phone: 576px;
+.Register {
+  .center {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 96px 0 120px 0;
+    // align-items: center;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-phone) {
+        padding: 72px 0 88px 0;
+        width: 100%;
+      }
+    .left-side-form {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: $breakpoint-phone) {
+        width: 100%;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #4f4f4f;
+        margin-bottom: 40px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        .fb {
+          margin-right: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          .fb-icon {
+            margin-right: 8px;
+            font-size: 26px;
+            color: blue;
+          }
+          span {
+            font-size: 12px;
+            color: #4f4f4f;
+          }
+        }
+        .gmail {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          .gmail-icon {
+            margin-right: 8px;
+            font-size: 26px;
+            color: red;
+          }
+          span {
+            font-size: 12px;
+            color: #4f4f4f;
+          }
+        }
+      }
+      .or {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #bdbdbd;
+        font-family: DM "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin: 32px 0 24px 0;
+        display: block;
+      }
+      .login-form {
+          .name{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            label {
+              font-size: 14px;
+              color: #4f4f4f;
+              margin-bottom: 8px;
+            }
+            input {
+              width: 312px;
+              background: #f2f2f2;
+              border-radius: 8px;
+              border: 1px solid #f2f2f2;
+              padding: 14px 0 14px 16px;
+              outline: none;
+            }
+          }
+          .number{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            label {
+              font-size: 14px;
+              color: #4f4f4f;
+              margin-bottom: 8px;
+            }
+            input {
+              width: 312px;
+              background: #f2f2f2;
+              border-radius: 8px;
+              border: 1px solid #f2f2f2;
+              padding: 14px 0 14px 16px;
+              outline: none;
+            }
+          }
+        .email {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 24px;
+          label {
+            font-size: 14px;
+            color: #4f4f4f;
+            margin-bottom: 8px;
+          }
+          input {
+            width: 312px;
+            background: #f2f2f2;
+            border-radius: 8px;
+            border: 1px solid #f2f2f2;
+            padding: 14px 0 14px 16px;
+            outline: none;
+          }
+        }
+        .password {
+          display: flex;
+          flex-direction: column;
+          label {
+            font-size: 14px;
+            color: #4f4f4f;
+            margin-bottom: 8px;
+          }
+          input {
+            width: 312px;
+            background: #f2f2f2;
+            border-radius: 8px;
+            border: 1px solid #f2f2f2;
+            padding: 14px 0 14px 16px;
+            outline: none;
+          }
+          span {
+              display: none;
+          }
+        }
+      }
+      .login{
+          display: none;
+          @media (max-width: $breakpoint-phone) {
+            display: block;
+            margin-top: 24px;
+          }
+          span{
+           &:nth-child(1){
+            @media (max-width: $breakpoint-phone) {
+                font-size: 14px;
+              color: #4f4f4f;
+              }
+           }
+           &:nth-child(2){
+            @media (max-width: $breakpoint-phone) {
+                font-weight: 500;
+                font-size: 14px;
+                color: #2d9cdb;
+              }
+           }
+          }
+      }
+      .agreements{
+          display: flex;
+          align-items: center;
+          margin: 28px 0 48px 0;
+          width: 64%;
+          @media (max-width: $breakpoint-phone) {
+           width: 83%;
+          }
+          input{
+            border: 1px solid #E0E0E0;
+            background-color: #E0E0E0 ;
+            border-radius: 8px;
+            outline: none;
+            height: 20px;
+            width: 20px;
+            margin-right: 8px;
+          }
+          p{
+            font-size: 12px;  
+            color: #4F4F4F;
+            span{
+                color: #2D9CDB;
+            }
+            
+          }
+      }
+      .form-btn-gray{
+        background: gray;
+        border: 1px solid gray;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #ffffff;
+        width: 312px;
+        height: 48px;
+        text-align: center;
+      }
+      .form-btn-green{
+        background: #2dd06e;
+        border: 1px solid #2dd06e;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #ffffff;
+        width: 312px;
+        height: 48px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .right-side {
+        @media (max-width: $breakpoint-phone) {
+            display: none;
+          }
+      .img {
+        margin-bottom: 36px;
+      }
+      .register{
+          display: flex;
+          justify-content: center;
+          
+        span {
+            &:nth-child(1) {
+              font-size: 14px;
+              color: #4f4f4f;
+            }
+            // &:nth-child(2) {
+            //   font-weight: 500;
+            //   font-size: 14px;
+            //   color: #2d9cdb;
+            //   cursor: pointer;
+            // }
+          }
+          a{
+            text-decoration: none !important;
+            .enter{
+              font-weight: 500;
+              font-size: 14px;
+              color: #2d9cdb;
+              cursor: pointer;
+            }
+          }
+      }
+     
+    }
+  }
+}

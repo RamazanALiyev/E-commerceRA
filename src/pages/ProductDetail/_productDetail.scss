@@ -1,0 +1,354 @@
+$breakpoint-phone: 576px;
+.Product-detail {
+  .center {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 26px;
+    @media (max-width: $breakpoint-phone) {
+      flex-direction: column;
+    }
+    .product-img-slider {
+      width: 50%;
+      height: 600px;
+      @media (max-width: $breakpoint-phone) {
+        width: 100%;
+        height: 360px;
+      }
+      .path {
+        @media (max-width: $breakpoint-phone) {
+          display: none;
+        }
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 45%;
+        height: 70%;
+        object-fit: cover;
+      }
+      .swiper-button-prev {
+        color: #2e3a59;
+      }
+      .swiper-button-next {
+        color: #2e3a59;
+      }
+    }
+    .product-variations {
+      width: 50%;
+      height: 600px;
+      padding: 100px 40px 40px 40px;
+      @media (max-width: $breakpoint-phone) {
+        width: 100%;
+        height: auto;
+        padding: 50px 0 24px 0;
+      }
+      .p-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333333;
+        margin-bottom: 18px;
+        @media (max-width: $breakpoint-phone) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .stars {
+        margin-top: 17px;
+        @media (max-width: $breakpoint-phone) {
+          display: none;
+        }
+        .count {
+          margin: 0 17px 0 9px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #4f4f4f;
+        }
+        .comments {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          color: #2d9cdb;
+        }
+        img {
+          &:nth-child(2) {
+            margin: 0 7px;
+          }
+          &:nth-child(4) {
+            margin: 0 7px;
+          }
+        }
+      }
+      .prices {
+        @media (max-width: $breakpoint-phone) {
+          display: flex;
+          align-items: center;
+          margin-top: 45px;
+        }
+        .price {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #db2c66;
+          margin-top: 25px;
+          @media (max-width: $breakpoint-phone) {
+            margin: 0;
+            color: #2dd06e;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+        .basket-btn2 {
+          display: none;
+          align-items: center;
+          background: #2dd06e;
+          width: 200px;
+          height: 50px;
+          border-radius: 8px;
+          justify-content: center;
+          margin-top: 3rem;
+          cursor: pointer;
+          @media (max-width: $breakpoint-phone) {
+            display: flex;
+            margin: 0 0 0 75px;
+          }
+          span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: 1rem;
+            color: #ffffff;
+          }
+        }
+      }
+      .divider {
+        height: 2px;
+        background: #f2f2f2;
+        margin: 12px 0 24px 0;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        @media (max-width: $breakpoint-phone) {
+          overflow-x: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+        .option-name {
+          font-size: 14px;
+          line-height: 20px;
+          color: #4f4f4f;
+          margin-right: 22px;
+          text-transform: capitalize;
+          display: flex;
+        }
+      }
+      .basket-counter {
+        @media (max-width: $breakpoint-phone) {
+          display: flex;
+          align-items: center;
+        }
+        .quantity {
+          display: none;
+          @media (max-width: $breakpoint-phone) {
+            display: block;
+            margin-right: 16px;
+          }
+        }
+        .decrement {
+          background: #f2f2f2;
+          border-radius: 20px;
+          padding: 8px;
+          border: 1px solid #f2f2f2;
+        }
+        .increment {
+          background: #f2f2f2;
+          border-radius: 20px;
+          padding: 8px;
+          border: 1px solid #f2f2f2;
+        }
+        span {
+          margin: 0 2rem;
+          color: #1d2123;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+      .basket-btn {
+        display: flex;
+        align-items: center;
+        background: #2dd06e;
+        width: 200px;
+        height: 50px;
+        border-radius: 8px;
+        justify-content: center;
+        margin-top: 3rem;
+        cursor: pointer;
+        @media (max-width: $breakpoint-phone) {
+          display: none;
+        }
+        span {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          margin-left: 1rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .center2 {
+    width: 90%;
+    margin: 0 auto;
+    .feedbacks {
+      display: flex;
+      align-items: center;
+      h3 {
+        cursor: pointer;
+        &:nth-child(1) {
+          margin-right: 120px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          color: #bdbdbd;
+          @media (max-width: $breakpoint-phone) {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+        &:nth-child(2) {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          color: #bdbdbd;
+          @media (max-width: $breakpoint-phone) {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      h3.active{
+        color: #4F4F4F;
+        @media (max-width: $breakpoint-phone) {
+          color: #2DD06E;
+          border-bottom: 2px solid #2DD06E;
+          ;
+        }
+      }
+    }
+    .divider2 {
+      height: 1px;
+      background-color: #bdbdbd;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.Gold {
+  background-color: gold;
+}
+.Aquamarine {
+  background-color: aquamarine;
+}
+.Blue {
+  background-color: blue;
+}
+.Red {
+  background-color: Red;
+}
+.Saphire {
+  background-color: rgb(15, 82, 186);
+}
+.Green {
+  background-color: green;
+}
+.White {
+  background-color: white;
+  border: 1px solid gray;
+}
+.Aqua {
+  background-color: aqua;
+}
+.Yellow {
+  background-color: yellow;
+}
+.Purple {
+  background-color: purple;
+}
+.Siearra {
+  background-color: #69abce;
+}
+.Midnight {
+  background-color: #2b333d;
+}
+.Black {
+  background-color: black;
+}
+.Gray{
+  background-color: gray;
+}
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.memory {
+  background: #828282;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+

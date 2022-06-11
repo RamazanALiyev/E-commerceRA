@@ -1,0 +1,19 @@
+$breakpoint-phone: 576px;
+.services{
+    margin: 142px 0 136px;
+    @media (max-width: $breakpoint-phone) {
+        margin-top: 2rem;
+   }
+.center{
+    width: 90%;
+    margin: 0 auto;
+    .all-services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $breakpoint-phone) {
+            flex-direction: column;
+       }
+    }
+}
+}

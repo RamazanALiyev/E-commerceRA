@@ -1,0 +1,18 @@
+$breakpoint-phone: 576px;
+.service {
+  .pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+    text-align: center;
+    @media (max-width: $breakpoint-phone) {
+      margin: 40px 0;
+      text-align:center;
+    }
+  }
+  span {
+    margin: 40px 0 24px 0;
+  }
+}

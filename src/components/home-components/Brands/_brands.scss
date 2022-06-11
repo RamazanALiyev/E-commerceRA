@@ -1,0 +1,27 @@
+$breakpoint-phone: 576px;
+.mySwiper.brend {
+  background-color: #f5f5f7;
+  padding-bottom: 1rem;
+  @media (max-width: $breakpoint-phone) {
+    display: none;
+}
+  .center {
+    width: 90%;
+    margin: 0 auto;
+    .Brand {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .Brands {
+        height: 80px;
+        display: flex;
+        width: 170px;
+        align-items: center;
+      }
+    }
+  }
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+  margin-bottom: 0;
+}

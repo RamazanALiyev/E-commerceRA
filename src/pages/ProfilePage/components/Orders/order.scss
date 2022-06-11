@@ -1,0 +1,36 @@
+.order-side {
+  margin-left: 2rem;
+  width: 100%;
+
+  .empty-basket {
+
+
+    h2 {
+      font-weight: 500;
+      font-size: 20px;
+      color: #4F4F4F;
+      margin-bottom: 1rem;
+    }
+
+    .empty-basket-box {
+      background: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      height: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .store-icon {
+        font-size: 70px;
+        color: #BDBDBD;
+        margin-bottom: 3rem;
+      }
+
+      span {
+        color: #BDBDBD;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$breakpoint-phone: 576px;
+.Payment{
+  min-height: 80vh;
+  padding: 3rem;
+@media (max-width: $breakpoint-phone) {
+  padding: 44px 0 60px 0;
+}
+  .center{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: $breakpoint-phone) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+

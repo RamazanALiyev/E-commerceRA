@@ -1,0 +1,96 @@
+$breakpoint-phone: 576px;
+.Productanniversary{
+    width: 592px;
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    &:not(:nth-child(2)){
+        margin-right: 32px;
+    }
+    @media (max-width: $breakpoint-phone) {
+        width: 100%;
+        &:not(:nth-child(2)){
+            margin-right: 0px;
+        }
+      }
+    .leftinfoanniversary{
+        width: 50%;
+        height: 100%;
+        padding: 30px 0px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (max-width: $breakpoint-phone) {
+            padding: 30px 0px 30px 10px;
+          }
+        h1{
+            font-weight: 600;
+            font-size: 32px;
+            @media (max-width: $breakpoint-phone) {
+                font-size: 19px;
+                  }
+        }
+        h3{
+            font-weight: 600;
+            margin: 20px 0 5px 0;
+        }
+        p{
+            color: #828282;
+        }
+        button{
+            border: 1px solid #828282;
+            outline: none;
+            background-color: transparent;
+            color: #828282;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .productimganniversary{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $breakpoint-phone) {
+            justify-content: flex-start;
+          }
+        img{
+            &:nth-child(2){
+                width: 80px;
+                height: 100px;
+                @media (max-width: $breakpoint-phone) {
+                    position: absolute;
+                    right: 10%;
+                  }
+            }
+            @media (max-width: $breakpoint-phone) {
+                width: 100%;
+              }
+        }
+    }
+}
+
+.bgColor{
+    background-color: lightgray;
+    .alignItems{
+        align-items:center;
+        .fontWeight{
+            font-weight: 400;
+        }
+        .fontSize{
+            font-size: 24px;
+            text-align: center;
+            margin: 10px 0 20px 0;
+            @media (max-width: $breakpoint-phone) {
+                font-size: 16px;
+              }
+        }
+    }
+}
