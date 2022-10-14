@@ -12,7 +12,6 @@ const Register = () => {
   const [checked,setChecked] = useState(false)
   const navigate = useNavigate()
   const status = useSelector((state) => state.registerStatus.value);
-
   console.log('status',status)
   const dispatch = useDispatch();
   const AddUser = async (e) => {
@@ -47,11 +46,6 @@ const Register = () => {
       alertify.error('Could not create User')
       dispatch(checkstatus(null))
     }
-
-
-
-   
-  
   };
 
 
