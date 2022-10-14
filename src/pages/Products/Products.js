@@ -70,7 +70,7 @@ function Products({ filterName, setFilterName }) {
                                 <Accordion.Body>
                                     {categories.map((brands, index) => (
                                         <div className="brandsPro" key={index}>
-                                            <Link to={`/products/${brands.name.toLowerCase()}`}>
+                                            <Link className="link" to={`/products/${brands.name.toLowerCase()}`}>
                                                 <input
                                                     id={index}
                                                     type="checkbox"
