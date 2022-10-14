@@ -8,7 +8,7 @@ const initialState = {
 };
 export const fetchPhones = createAsyncThunk("phones/fetchPhones", async () => {
   let data = await commerce.products
-    .list({ category_slug: ["Phones"] })
+    .list({ category_slug: ["Mehsullar"] })
     .then((phones) => {
       return phones.data;
     });

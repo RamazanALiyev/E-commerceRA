@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../Products/_product.scss";
 import FilterProduct from "./FilterProduct";
-import {Accordion} from "react-bootstrap";
-import {useSelector,useDispatch} from "react-redux";
-import {Link} from "react-router-dom";
-import {Oval} from "react-loading-icons";
-import {addToFilter} from "../../Features/Filtered";
+import { Accordion } from "react-bootstrap";
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { Oval } from "react-loading-icons";
+import { addToFilter } from "../../Features/Filtered";
 import alertify from "alertifyjs";
 
-function Products({filterName, setFilterName}) {
+function Products({ filterName, setFilterName }) {
     const dispatch = useDispatch()
-   const datas =  useSelector((state) => state.products.products);
-
+    const datas = useSelector((state) => state.products.products);
+    console.log(datas)
 
     const [minVal, setMinVal] = useState(0)
     const [maxVal, setMaxVal] = useState(9999)
@@ -21,31 +21,30 @@ function Products({filterName, setFilterName}) {
         setMinVal(e.target.value)
     }
     const maxInputVal = (e) => {
-       if(e.target.value>minVal){
-           setMaxVal(e.target.value)
-       }else if(isNaN(e.target.value)){
-           console.log('axafe')
-           setMaxVal(9999)
-       }else if(e.target.value===''){
-           setMaxVal(null)
-       }
+        if (e.target.value > minVal) {
+            setMaxVal(e.target.value)
+        } else if (isNaN(e.target.value)) {
+            setMaxVal(9999)
+        } else if (e.target.value === '') {
+            setMaxVal(null)
+        }
     }
 
     const handlechange = (name) => {
         setFilterName(name);
     };
 
-   useEffect(()=> {
-       let filtered = datas.filter((data, index)=> minVal <= data?.price?.raw && data?.price?.raw <= maxVal)
-       dispatch(addToFilter(filtered))
-       console.log(maxVal,'maxval')
-   }, [minVal, maxVal, datas, dispatch])
+    useEffect(() => {
+        let filtered = datas.filter((data, index) => minVal <= data?.price?.raw && data?.price?.raw <= maxVal)
+        dispatch(addToFilter(filtered))
+        console.log(maxVal, 'maxval')
+    }, [minVal, maxVal, datas, dispatch])
     const categories = useSelector((state) => state.categories.categories);
     const loading = useSelector((state) => state.products.status);
     if (loading === "loading") {
         return (
             <div className="black-page">
-                <Oval stroke="#00D68F" className="loading"/>
+                <Oval stroke="#00D68F" className="loading" />
                 <p>Məhsullar yüklənir</p>
             </div>
         );
@@ -87,13 +86,13 @@ function Products({filterName, setFilterName}) {
                             <Accordion.Item eventKey="4">
                                 <Accordion.Header>Qiymət</Accordion.Header>
                                 <Accordion.Body>
-                                    <form onSubmit={(e)=> e.preventDefault()} className='priceFilter'>
+                                    <form onSubmit={(e) => e.preventDefault()} className='priceFilter'>
                                         <div className='inputParentLower'>
-                                            <input value={minVal} onChange={minInputVal}/>
+                                            <input value={minVal} onChange={minInputVal} />
                                             <span>₼</span>
                                         </div>
                                         <div className='inputParentUpper'>
-                                            <input value={maxVal} onChange={maxInputVal}/>
+                                            <input value={maxVal} onChange={maxInputVal} />
                                             <span>₼</span>
                                         </div>
                                         <button className='d-none' type='submit'></button>
@@ -102,7 +101,7 @@ function Products({filterName, setFilterName}) {
                             </Accordion.Item>
                         </Accordion>
                     </div>
-                    <FilterProduct filterName={filterName}/>
+                    <FilterProduct filterName={filterName} />
                 </div>
             </div>
         </div>
